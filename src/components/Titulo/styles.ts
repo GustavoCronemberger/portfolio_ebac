@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-import { Props } from '.'
+import { Props } from './titulo'
 
 export const Titulo = styled.h3<Props>`
   color: ${(props) => props.theme.corPrincipal};

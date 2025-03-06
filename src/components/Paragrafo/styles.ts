@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-import { Props } from '.'
+import { Props } from './paragrafo'
 
 export const P = styled.p<Props>`
   font-size: ${(props) => (props.fontSize ? props.fontSize + 'px' : '14px')};
@@ -9,4 +9,5 @@ export const P = styled.p<Props>`
       ? props.theme.corPrincipal
       : props.theme.corSecundaria};
   line-height: 22px;
+  text-align: justify;
 `

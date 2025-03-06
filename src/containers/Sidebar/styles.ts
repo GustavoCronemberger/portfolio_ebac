@@ -8,20 +8,24 @@ export const Descricao = styled(P)`
 export const BotaoTema = styled.button`
   border-radius: 12px;
   padding: 8px;
-  color: ${(props) => props.theme.corDeFundo};
+  color: ${(props) => props.theme.corDefundo};
   font-size: 10px;
   font-weight: bold;
   background-color: ${(props) => props.theme.corPrincipal};
+  margin-bottom: 20px;
   cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  &:hover {
+    background-color: ${(props) => props.theme.corHoverBotao};
+    color: ${(props) => props.theme.corTextoHover};
+  }
 `
-
 export const SidebarContainer = styled.div`
   position: sticky;
   top: 80px;
   left: 0;
 
   @media (max-width: 768px) {
-    margin-bottom: 40px;
     text-align: center;
   }
 `
